@@ -1,0 +1,10 @@
+services:
+    pitech_filters.filter_field_cache.service:
+        class: Pitech\FiltersBundle\Annotations\FiltersCache
+        arguments:
+            - %pitech_filters.yaml_annotation_cache_dir%
+    pitech_filters.filter_field_reader.service:
+        class: Pitech\FiltersBundle\Annotations\FilterFieldReader
+        arguments:
+            - "@pitech_filters.filter_field_cache.service"
+            - %pitech_filters.yaml_annotation_cache_dir%

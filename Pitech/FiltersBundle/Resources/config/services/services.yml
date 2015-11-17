@@ -1,0 +1,20 @@
+parameters:
+    pitech_filters.yaml_annotation_cache_dir: %kernel.root_dir%/cache/%kernel.environment%/annotations
+    pitech_filters.filters_delimiter: ';'
+    pitech_filters.filters_or_delimiter: ','
+    pitech_filters.expression_delimiter: '#'
+    pitech_filters.interval_delimiter: ':'
+
+services:
+    pitech_filters.filter.service:
+        class: Pitech\FiltersBundle\Filters\Service\FilterService
+        arguments:
+            - "@pitech_filters.filter.factory"
+            - "%pitech_filters.bundle_entities_folder%"
+    pitech_filters.filter.type:
+        class: Pitech\FiltersBundle\Filters\Service\FilterTypeService
+
+    pitech_filters.filter.helper:
+        class: Pitech\FiltersBundle\Filters\Helper\FilterHelper
+        arguments:
+            - "@logger"

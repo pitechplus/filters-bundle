@@ -1,0 +1,17 @@
+services:
+    pitech_filters.filter.factory:
+        class: Pitech\FiltersBundle\Filters\Factory\FilterFactory
+        arguments:
+          - "@pitech_filters.filter.helper"
+          - "@pitech_filters.filter.type_guesser"
+          - "@pitech_filters.filter.type"
+          - "%pitech_filters.filters_delimiter%"
+          - "%pitech_filters.filters_or_delimiter%"
+          - "%pitech_filters.expression_delimiter%"
+          - "%pitech_filters.interval_delimiter%"
+
+    pitech_filters.filter.type_guesser:
+        class: Pitech\FiltersBundle\Filters\TypeGuesser\FilterTypeGuesser
+        arguments:
+          - "@doctrine.orm.default_entity_manager"
+          - "@pitech_filters.filter_field_reader.service"
