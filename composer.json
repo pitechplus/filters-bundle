@@ -14,7 +14,7 @@
             "email": "adumitrache@pitechplus.com"
         }
     ],
-    "version": "dev-master",
+    "version": "1.0.0",
     "source": {
         "url": "git@github.com:pitechplus/filters-bundle.git",
         "type": "git",
