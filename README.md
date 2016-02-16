@@ -1,4 +1,7 @@
-# filters-bundle
-Bundle that filters entities on any request based on annotations. Requires doctrine-common.
+### PitechPlus Doctrine Filters Bundle
 
-See the [documentation](https://github.com/pitechplus/filters-bundle/blob/master/Pitech/FiltersBundle/Resources/doc/index.rst) for more details.
+This Bundle filters entities on any request based on annotations.
+
+The only requirement is doctrine-common.
+
+See the [documentation and installation guide](https://github.com/pitechplus/filters-bundle/blob/master/Pitech/FiltersBundle/Resources/doc/index.rst) for more details.
