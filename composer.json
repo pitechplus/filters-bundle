@@ -1,5 +1,19 @@
 {
     "name": "pitechplus/filters-bundle",
+    "authors": [
+        {
+            "name": "Andrei Burian",
+            "email": "aburian@pitechplus.com"
+        },
+        {
+            "name": "Dan Coman",
+            "email": "dcoman@pitechplus.com"
+        },
+        {
+            "name": "Adrian Dumitrache",
+            "email": "adumitrache@pitechplus.com"
+        }
+    ],
     "version": "dev-master",
     "source": {
         "url": "git@github.com:pitechplus/filters-bundle.git",
@@ -12,6 +26,7 @@
         }
     },
     "require": {
+        "php": ">=5.3.0",
         "doctrine/common": ">=2.2"
     }
 }
