@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Pitech\\FiltersBundle": ""
+            "Pitech\\FiltersBundle": "pitechplus/filters-bundle"
         }
     },
     "require": {
